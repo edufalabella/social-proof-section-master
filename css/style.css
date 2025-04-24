@@ -1,0 +1,182 @@
+body {
+    padding: 80px;
+    font-size: 15px;
+    font-family: "League Spartan";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+.title {
+    grid-column: 1
+}
+
+.title h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 3em;
+
+}
+
+
+.title p {
+    color: hsl(303, 10%, 53%);
+}
+
+.stars {
+    grid-column: 3 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 420px;
+
+}
+
+.stars div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background: hsl(300, 24%, 96%);
+    color: #103;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.stars1 {
+    margin-left: 0px;
+    margin-right: 80px;
+
+}
+
+.stars2 {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.stars3 {
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+.stars img {
+    width: 16px;
+    height: 16px;
+}
+
+.cards-geral {
+    display: grid;
+    gap: 1.5rem;
+    /* opcional: adiciona espaço entre as colunas */
+    grid-column: span 3;
+    margin-top: 5rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card1 {
+    background-color: #4b006e;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 30%;
+    aspect-ratio: 2 / 1;
+    margin-top: 0px;
+    margin-bottom: 160px;
+
+}
+
+.card2 {
+    background-color: #4b006e;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 30%;
+    margin-top: 40px;
+    margin-bottom: 120px;
+
+}
+
+.card3 {
+    background-color: #4b006e;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 30%;
+
+    aspect-ratio: 2 / 1;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.user span {
+    color: #f28cdc;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 2em;
+    }
+
+    .stars {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .stars div {
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .stars1,
+    .stars2,
+    .stars3 {
+        margin: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        margin: 0;
+        aspect-ratio: auto;
+    }
+}
